@@ -18,6 +18,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
 app.use('/api',memberRoutes); // Use the router as middleware under the `/api` path
 
 app.listen(PORT, () => {
