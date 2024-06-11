@@ -6,7 +6,7 @@ import  memberRoutes from './routes/members'; // Adjust the path to where your m
 
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
   origin: '*', // Allow only this origin
